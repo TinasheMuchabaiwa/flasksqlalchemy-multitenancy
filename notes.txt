@@ -1,0 +1,4 @@
+- Change variable name "type" to avoid using python keywords 
+    - Hence also change it where it is used in tests
+
+- Investigate on SQLite "duplicate column name" error after db upgrade
