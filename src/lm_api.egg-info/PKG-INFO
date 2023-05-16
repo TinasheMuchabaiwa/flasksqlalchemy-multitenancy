@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lm-api
+Version: 1.0.0
+Summary: REST API for Managing the Links between OSLC Applications
+Author: Koneksys
+Author-email: axel.reichwein@koneksys.com
+Requires-Python: >=3.10
+Provides-Extra: dev
+Provides-Extra: test

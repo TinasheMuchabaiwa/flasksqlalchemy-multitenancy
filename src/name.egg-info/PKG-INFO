@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: name
+Version: 1.0.0
+Summary: description
+Author: Tinashe Muchabaiwa
+Author-email: muchabaiwatinashe@gmail.com
+Requires-Python: >=3.10
+Provides-Extra: dev
+Provides-Extra: test

@@ -9,7 +9,8 @@ SQLITE_PROD = "sqlite:///" + str(path / "api_prod.db")
 LOG_TO_STDOUT = (None,)
 
 SQLALCHEMY_TRACK_MODIFICATIONS = True
-SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL", SQLITE_DEV)
+SQLALCHEMY_DATABASE_URI = "postgresql://postgres:postgres@localhost:5432/{}"
+default_db = "multi-tenancy-test"
 
 
 class Config:
@@ -26,6 +27,8 @@ class Config:
         "KC_TOKEN_ENDPOINT",
         f"http://localhost:8080/realms/{KC_REALM}/openid-connect/token",
     )
+
+    # SQLALCHEMY_BINDS = SQLALCHEMY_DATABASE_URI.format(default_db)
 
 
 class TestingConfig(Config):
